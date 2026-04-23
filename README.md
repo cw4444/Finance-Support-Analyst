@@ -1,22 +1,22 @@
 # Finance Support Analyst
 
-> A proof-of-concept demo for a generic finance support workspace, built to show how AI can take on the repetitive first pass of the job.
+> A proof-of-concept demo for a generic finance support workspace, built to show how AI can handle the repetitive first pass of the job.
 
-This project is intentionally lightweight and presentation-focused. It is not a production finance system. It is a concept build that turns a familiar finance support workflow into a simple, modern demo you can show on Vercel.
+## Summary
 
-## What it shows
+This project turns a familiar finance support workflow into a clean, public-facing demo. It is intentionally simple, visual, and easy to understand at a glance. The point is not to replace finance judgement, but to show how AI can take on the tedious, repeatable parts so the human team can spend more time on exceptions, escalation, and decision-making.
 
-The app frames the parts of finance support work that are most suitable for AI-assisted automation:
+## What the demo shows
 
-- query triage and routing
-- first-draft variance explanations
-- recurring monthly reporting
-- ad hoc finance information requests
-- human review before anything is sent out
+- Query triage and routing
+- First-draft variance explanations
+- Recurring monthly reporting
+- Ad hoc finance information requests
+- Human review before anything is sent out
 
-## Why AI helps
+## Why this matters
 
-Finance support work often repeats in predictable patterns:
+Finance support work often follows predictable patterns:
 
 - requests arrive in similar shapes
 - the first response usually needs the same checks
@@ -24,34 +24,36 @@ Finance support work often repeats in predictable patterns:
 - month-end packs are assembled from stable templates
 - recurring ad hoc requests often reuse prior outputs
 
-AI is useful because it can speed up the first pass by:
+That makes it a strong fit for AI-assisted automation. The model can classify, summarise, draft, and structure the work, while the analyst keeps control of judgement and sign-off.
 
-- classifying incoming requests
-- spotting missing or incomplete information
-- drafting summaries from structured inputs
-- generating consistent narrative for reports
-- turning messy asks into cleaner, reviewable outputs
+## How it works
 
-That leaves the human analyst to focus on judgement, escalation, exceptions, and stakeholder management.
+The demo is built around three simple steps:
 
-## Included Files
+1. Capture the request or data
+1. Generate a strong first draft
+1. Review and send with a human in the loop
 
-- [`app/page.jsx`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/app/page.jsx) - the main demo page
+This mirrors how finance teams can actually use AI in practice: not as a black box, but as a fast first-pass assistant.
+
+## Included files
+
+- [`app/page.jsx`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/app/page.jsx) - the main demo experience
 - [`app/globals.css`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/app/globals.css) - the visual system
-- [`redacted-job-spec.md`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/redacted-job-spec.md) - a cleaned, generic version of the original brief
+- [`redacted-job-spec.md`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/redacted-job-spec.md) - a cleaned, generic source brief
 
 ## Built with Codex
 
 Built entirely by [Codex from OpenAI](https://chatgpt.com/codex/cloud).
 
-## Local development
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+## Build for deployment
 
 ```bash
 npm run build
@@ -59,4 +61,4 @@ npm run build
 
 ## Deployment
 
-This project is ready for Vercel. Connect the GitHub repo and deploy the `main` branch for a live preview.
+The repo is ready for Vercel. Connect `main` and publish the preview.

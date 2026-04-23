@@ -28,6 +28,21 @@ const signals = [
   { label: 'Queries routed correctly', value: '93%' },
 ];
 
+const workflowPoints = [
+  {
+    title: 'See the request',
+    text: 'Open a finance query, a spreadsheet extract, or a reporting task and capture the essentials immediately.',
+  },
+  {
+    title: 'Generate the first pass',
+    text: 'Use AI to sort, summarise, and draft the response before a human spends time on the long tail.',
+  },
+  {
+    title: 'Review and send',
+    text: 'Keep judgement with the analyst while AI handles the repetitive formatting, wording, and routing.',
+  },
+];
+
 const queue = [
   ['High', 'Missing accrual', 'Finance user', 'Needs ledger check'],
   ['Medium', 'Overspend driver', 'Finance partner', 'Variance explained'],
@@ -136,6 +151,25 @@ export default function Page() {
               <p>Generate a clean summary, a suggested reply, and a sign-off note for a human reviewer.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="content">
+        <div className="sectionHeader">
+          <p className="eyebrow">How it works</p>
+          <h2>The demo is built around a simple operating model: capture, draft, review.</h2>
+        </div>
+
+        <div className="steps">
+          {workflowPoints.map((point, index) => (
+            <div className="step" key={point.title}>
+              <span>{index + 1}</span>
+              <div>
+                <h3>{point.title}</h3>
+                <p>{point.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </main>
