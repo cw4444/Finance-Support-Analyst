@@ -1,7 +1,7 @@
 const taskData = [
   {
     title: 'Query triage',
-    summary: 'Sort budget-holder requests by urgency, owner, and missing data.',
+    summary: 'Sort incoming requests by urgency, owner, and missing information.',
     items: ['Goods receipt mismatch', 'Cost centre not found', 'Invoice coding query', 'PO aged item'],
   },
   {
@@ -11,7 +11,7 @@ const taskData = [
   },
   {
     title: 'Monthly reporting',
-    summary: 'Assemble standard packs with the same tables, narrative, and sign-off logic every month.',
+    summary: 'Assemble standard packs with the same tables, narrative, and sign-off logic each month.',
     items: ['Cost centre pack', 'Budget holder summary', 'Exception list', 'Variance bridge'],
   },
   {
@@ -29,8 +29,8 @@ const signals = [
 ];
 
 const queue = [
-  ['High', 'Missing accrual', 'Budget holder', 'Needs ledger check'],
-  ['Medium', 'Overspend driver', 'Finance BP', 'Variance explained'],
+  ['High', 'Missing accrual', 'Finance user', 'Needs ledger check'],
+  ['Medium', 'Overspend driver', 'Finance partner', 'Variance explained'],
   ['Low', 'Supplier spend query', 'Requester', 'Template reply ready'],
 ];
 
@@ -40,12 +40,12 @@ export default function Page() {
       <section className="hero">
         <div className="heroBackdrop" />
         <header className="topbar">
-          <div>
-            <p className="eyebrow">Finance support</p>
-            <h1>Easy-prey finance work, automated.</h1>
-          </div>
+            <div>
+              <p className="eyebrow">Finance support</p>
+            <h1>Finance work, automated.</h1>
+            </div>
           <p className="lead">
-            A proof-of-concept demo that shows how AI can absorb the repetitive first pass:
+            A proof-of-concept demo showing how AI can absorb the repetitive first pass:
             triage, variance commentary, standard reporting, and ad hoc responses.
           </p>
         </header>
@@ -90,7 +90,7 @@ export default function Page() {
       <section className="content">
         <div className="sectionHeader">
           <p className="eyebrow">What gets automated</p>
-          <h2>Most of the daily grind is structured enough to get a strong first draft.</h2>
+          <h2>Most of the recurring workload is structured enough to get a strong first draft.</h2>
         </div>
 
         <div className="taskGrid">
@@ -119,7 +119,7 @@ export default function Page() {
             <span>1</span>
             <div>
               <h3>Ingest</h3>
-              <p>Drop in a budget-holder question, a ledger extract, or a month-end spreadsheet.</p>
+              <p>Drop in a finance question, a ledger extract, or a month-end spreadsheet.</p>
             </div>
           </div>
           <div className="step">

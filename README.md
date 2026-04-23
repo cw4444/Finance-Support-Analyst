@@ -1,50 +1,62 @@
 # Finance Support Analyst
 
-A proof-of-concept demo for a finance support workspace that shows how AI can automate the easy, repetitive parts of the job.
+> A proof-of-concept demo for a generic finance support workspace, built to show how AI can take on the repetitive first pass of the job.
 
-This is not a production finance system. It is a concept build designed to illustrate how a support analyst or finance operations team could use AI to speed up first-pass work while keeping a human in the loop for review and approval.
+This project is intentionally lightweight and presentation-focused. It is not a production finance system. It is a concept build that turns a familiar finance support workflow into a simple, modern demo you can show on Vercel.
 
-## What it demonstrates
+## What it shows
 
-- Query triage for budget-holder questions
-- First-draft variance explanations
-- Standard monthly reporting packs
-- Ad hoc finance information requests
-- Human review points before anything is sent out
+The app frames the parts of finance support work that are most suitable for AI-assisted automation:
 
-## Why AI helps here
+- query triage and routing
+- first-draft variance explanations
+- recurring monthly reporting
+- ad hoc finance information requests
+- human review before anything is sent out
 
-A lot of finance support work follows repeatable patterns:
+## Why AI helps
 
-- requests come in with similar shapes
-- the first response often needs the same kinds of checks
-- variance commentary usually starts from the same data inputs
-- monthly packs are built from consistent templates
-- ad hoc requests often reuse prior outputs
+Finance support work often repeats in predictable patterns:
 
-AI is useful for the first pass because it can:
+- requests arrive in similar shapes
+- the first response usually needs the same checks
+- variance commentary starts from the same data inputs
+- month-end packs are assembled from stable templates
+- recurring ad hoc requests often reuse prior outputs
 
-- classify and route requests
-- detect missing information
-- draft summaries from structured data
-- generate consistent narrative for reports
-- turn messy asks into cleaner, reviewable outputs
+AI is useful because it can speed up the first pass by:
 
-That leaves the human team to focus on judgement, exceptions, stakeholder management, and final sign-off.
+- classifying incoming requests
+- spotting missing or incomplete information
+- drafting summaries from structured inputs
+- generating consistent narrative for reports
+- turning messy asks into cleaner, reviewable outputs
+
+That leaves the human analyst to focus on judgement, escalation, exceptions, and stakeholder management.
+
+## Included Files
+
+- [`app/page.jsx`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/app/page.jsx) - the main demo page
+- [`app/globals.css`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/app/globals.css) - the visual system
+- [`redacted-job-spec.md`](/C:/Users/cw444/CascadeProjects/Finance-Support-Analyst/redacted-job-spec.md) - a cleaned, generic version of the original brief
 
 ## Built with Codex
 
 Built entirely by [Codex from OpenAI](https://chatgpt.com/codex/cloud).
 
-## Run locally
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build for deployment
+## Production build
 
 ```bash
 npm run build
 ```
+
+## Deployment
+
+This project is ready for Vercel. Connect the GitHub repo and deploy the `main` branch for a live preview.
