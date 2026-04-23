@@ -41,7 +41,7 @@ export default function Page() {
         <div className="heroBackdrop" />
         <header className="topbar">
           <div>
-            <p className="eyebrow">NHSBT finance support</p>
+            <p className="eyebrow">Finance support</p>
             <h1>Easy-prey finance work, automated.</h1>
           </div>
           <p className="lead">
